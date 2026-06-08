@@ -319,7 +319,38 @@ body {
     background-color: #b91c1c;
 }
 
-/* ADAPTACIÓN DEL FORMULARIO A DESKTOP */
+/* Estilo del botón Suscribirse en el menú de navegación principal */
+.menu-navegacion .link-suscripcion {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+.menu-navegacion .link-suscripcion:hover {
+    color: #0f172a; /* Cambia a oscuro al pasar el mouse */
+}
+
+/* ADAPTACIÓN DEL FORMULARIO A DESKTOP (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
     .contenedor-formulario {
-        max-width: 9
+        max-width: 900px; /* Aquí completamos los 900px */
+        padding: 40px;
+    }
+
+    #form-suscripcion {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .grupo-control {
+        width: 48%; /* Esto fuerza la distribución en dos columnas perfectas */
+    }
+
+    .grupo-boton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
